@@ -93,11 +93,6 @@
           tags.appendChild(tag);
         });
         row.appendChild(tags);
-      } else {
-        var noTag = document.createElement("div");
-        noTag.className = "tag-empty";
-        noTag.textContent = "Produk favorit belum tercatat";
-        row.appendChild(noTag);
       }
 
       var priceRow = document.createElement("div");

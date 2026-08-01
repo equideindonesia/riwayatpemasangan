@@ -125,14 +125,14 @@
     if (!kota) {
       areaSelect.disabled = true;
       populateSelect(areaSelect, [], "Pilih kota dulu");
-      renderEmpty("Pilih kota dan area untuk melihat daftar cluster.");
+      renderEmpty("Pilih kota dan area untuk melihat daftar lokasi.");
       return;
     }
 
     var areas = getAreaList(kota);
     areaSelect.disabled = false;
     populateSelect(areaSelect, areas, "— Pilih area —");
-    renderEmpty("Pilih area untuk melihat daftar cluster.");
+    renderEmpty("Pilih area untuk melihat daftar lokasi.");
   }
 
   function onAreaChange() {
@@ -140,7 +140,7 @@
     var area = areaSelect.value;
 
     if (!kota || !area) {
-      renderEmpty("Pilih area untuk melihat daftar cluster.");
+      renderEmpty("Pilih area untuk melihat daftar lokasi.");
       return;
     }
 
@@ -151,7 +151,7 @@
     populateSelect(kotaSelect, getKotaList(), "— Pilih kota —");
     areaSelect.disabled = true;
     populateSelect(areaSelect, [], "Pilih kota dulu");
-    renderEmpty("Pilih kota dan area untuk melihat daftar cluster.");
+    renderEmpty("Pilih kota dan area untuk melihat daftar lokasi.");
 
     kotaSelect.addEventListener("change", onKotaChange);
     areaSelect.addEventListener("change", onAreaChange);

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Direktori Pemasangan per Cluster</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Riwayat pemasangan</p>
+  <h1>Cari cluster Anda</h1>
+  <p class="sub">Pilih kota lalu area untuk melihat cluster yang pernah kami layani, beserta produk favorit dan estimasi harga jasa pemasangan.</p>
+
+  <div class="field-row">
+    <div class="field">
+      <label class="field-label" for="kota-select">Kota</label>
+      <select id="kota-select"></select>
+    </div>
+    <div class="field">
+      <label class="field-label" for="area-select">Area</label>
+      <select id="area-select"></select>
+    </div>
+  </div>
+
+  <div id="results"></div>
+
+  <p class="footnote">Harga bersifat estimasi dan dapat berubah menyesuaikan kondisi lapangan. Untuk info lebih lanjut, hubungi tim kami langsung.</p>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,15 +1,13 @@
 :root {
   --bg: #FFFFFF;
-  --bg-soft: #F0F0F0;
-  --card: #223A31;
-  --line: rgba(232, 228, 214, 0.16);
-  --line-strong: rgba(232, 228, 214, 0.32);
-  --paper: ##000000;
-  --paper-dim: #555555;
-  --gold: #D9A441;
-  --gold-dim: #A87F35;
-  --green: #017d65;
-  --blue; #0094c0; 
+  --bg-soft: #F0F9FC;
+  --card: #E3F4F9;
+  --line: rgba(0, 42, 56, 0.1);
+  --line-strong: rgba(0, 148, 192, 0.35);
+  --paper: #0B2530;
+  --paper-dim: #5D7681;
+  --accent: #0094C0;
+  --accent-dim: #00718F;
 }
 
 * {
@@ -36,7 +34,7 @@ body {
   font-size: 12px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--green);
+  color: var(--accent);
   margin: 0 0 0.6rem;
 }
 
@@ -46,7 +44,7 @@ h1 {
   font-size: clamp(28px, 6vw, 38px);
   line-height: 1.15;
   margin: 0 0 0.5rem;
-  color: var(--blue);
+  color: var(--paper);
 }
 
 .sub {
@@ -92,7 +90,7 @@ select {
   font-weight: 500;
   padding: 14px 44px 14px 16px;
   border-radius: 10px;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23D9A441' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%230094C0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>");
   background-repeat: no-repeat;
   background-position: right 14px center;
   cursor: pointer;
@@ -105,8 +103,8 @@ select:disabled {
 
 select:focus {
   outline: none;
-  border-color: var(--gold);
-  box-shadow: 0 0 0 3px rgba(217, 164, 65, 0.18);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(0, 148, 192, 0.18);
 }
 
 #results {
@@ -145,7 +143,7 @@ select:focus {
 .entry-num {
   font-family: 'JetBrains Mono', monospace;
   font-size: 13px;
-  color: var(--gold-dim);
+  color: var(--accent-dim);
   flex-shrink: 0;
 }
 
@@ -173,9 +171,9 @@ select:focus {
 
 .tag {
   font-size: 12px;
-  color: var(--gold);
-  background: rgba(217, 164, 65, 0.12);
-  border: 1px solid rgba(217, 164, 65, 0.3);
+  color: var(--accent);
+  background: rgba(0, 148, 192, 0.1);
+  border: 1px solid rgba(0, 148, 192, 0.3);
   padding: 3px 9px;
   border-radius: 20px;
 }
@@ -204,7 +202,7 @@ select:focus {
   font-family: 'JetBrains Mono', monospace;
   font-size: 16px;
   font-weight: 500;
-  color: var(--gold);
+  color: var(--accent);
   white-space: nowrap;
 }
 

@@ -80,7 +80,7 @@
       top.className = "entry-top";
       top.innerHTML =
         '<span class="entry-num">' + String(i + 1).padStart(2, "0") + "</span>" +
-        '<span class="entry-name">' + entry.lokasi + "</span>";
+        '<span class="entry-name">' + entry.cluster + "</span>";
       row.appendChild(top);
 
       if (entry.favorit && entry.favorit.length > 0) {

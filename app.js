@@ -86,6 +86,12 @@
       if (entry.favorit && entry.favorit.length > 0) {
         var tags = document.createElement("div");
         tags.className = "tags";
+
+        var tagLabel = document.createElement("span");
+        tagLabel.className = "tags-label";
+        tagLabel.textContent = "Tipe Favorit:";
+        tags.appendChild(tagLabel);
+
         entry.favorit.forEach(function (product) {
           var tag = document.createElement("span");
           tag.className = "tag";

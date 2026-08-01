@@ -162,6 +162,13 @@ select:focus {
   margin-bottom: 10px;
 }
 
+.tags-label {
+  font-size: 13px;
+  color: var(--paper-dim);
+  align-self: center;
+  margin-right: 2px;
+}
+
 .tag {
   font-size: 12px;
   color: var(--gold);

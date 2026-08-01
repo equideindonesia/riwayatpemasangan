@@ -69,7 +69,7 @@
     var heading = document.createElement("div");
     heading.className = "area-heading";
     heading.innerHTML =
-      "<span>" + area + "</span><span>" + entries.length + " cluster</span>";
+      "<span>" + area + "</span><span>" + entries.length + " lokasi</span>";
     results.appendChild(heading);
 
     entries.forEach(function (entry, i) {
@@ -80,7 +80,7 @@
       top.className = "entry-top";
       top.innerHTML =
         '<span class="entry-num">' + String(i + 1).padStart(2, "0") + "</span>" +
-        '<span class="entry-name">' + entry.cluster + "</span>";
+        '<span class="entry-name">' + entry.lokasi + "</span>";
       row.appendChild(top);
 
       if (entry.favorit && entry.favorit.length > 0) {

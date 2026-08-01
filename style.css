@@ -1,13 +1,15 @@
 :root {
-  --bg: #16241F;
-  --bg-soft: #1D3129;
+  --bg: #FFFFFF;
+  --bg-soft: #F0F0F0;
   --card: #223A31;
   --line: rgba(232, 228, 214, 0.16);
   --line-strong: rgba(232, 228, 214, 0.32);
-  --paper: #E8E4D6;
-  --paper-dim: #B9B6A6;
+  --paper: ##000000;
+  --paper-dim: #555555;
   --gold: #D9A441;
   --gold-dim: #A87F35;
+  --green: #017d65;
+  --blue; #0094c0; 
 }
 
 * {
@@ -34,7 +36,7 @@ body {
   font-size: 12px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--green);
   margin: 0 0 0.6rem;
 }
 
@@ -44,7 +46,7 @@ h1 {
   font-size: clamp(28px, 6vw, 38px);
   line-height: 1.15;
   margin: 0 0 0.5rem;
-  color: var(--paper);
+  color: var(--blue);
 }
 
 .sub {

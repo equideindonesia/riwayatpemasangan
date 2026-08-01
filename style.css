@@ -154,10 +154,7 @@ select:focus {
   color: var(--paper);
 }
 
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
+.tags-wrap {
   padding-left: 26px;
   margin-bottom: 10px;
 }
@@ -165,8 +162,13 @@ select:focus {
 .tags-label {
   font-size: 13px;
   color: var(--paper-dim);
-  align-self: center;
-  margin-right: 2px;
+  margin-bottom: 6px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
 .tag {

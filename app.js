@@ -84,21 +84,25 @@
       row.appendChild(top);
 
       if (entry.favorit && entry.favorit.length > 0) {
-        var tags = document.createElement("div");
-        tags.className = "tags";
+        var tagsWrap = document.createElement("div");
+        tagsWrap.className = "tags-wrap";
 
-        var tagLabel = document.createElement("span");
+        var tagLabel = document.createElement("div");
         tagLabel.className = "tags-label";
         tagLabel.textContent = "Tipe Favorit:";
-        tags.appendChild(tagLabel);
+        tagsWrap.appendChild(tagLabel);
 
+        var tags = document.createElement("div");
+        tags.className = "tags";
         entry.favorit.forEach(function (product) {
           var tag = document.createElement("span");
           tag.className = "tag";
           tag.textContent = product;
           tags.appendChild(tag);
         });
-        row.appendChild(tags);
+        tagsWrap.appendChild(tags);
+
+        row.appendChild(tagsWrap);
       }
 
       var priceRow = document.createElement("div");

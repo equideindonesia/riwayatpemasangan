@@ -236,8 +236,6 @@ select:focus {
 
 .footnote {
   margin-top: 2.5rem;
-  padding-top: 1.2rem;
-  border-top: 1px solid var(--line);
   font-size: 12.5px;
   color: var(--paper-dim);
   line-height: 1.6;
